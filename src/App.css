@@ -36,3 +36,141 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+.navbar-custom {
+  
+}
+
+.navbar-nav{
+  color: red;
+}
+
+
+
+
+
+
+.home-class .img1{
+width: 100%;
+height:500px;
+}
+
+.home-class h2{
+  text-align: center;
+  font-family: Courier, monospace;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+
+.home-class p{
+  text-align: center;
+  font-weight: 500;
+
+}
+
+
+.home-class .img2{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 50px;
+  
+  }
+
+  .gymcontainer {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+
+  }
+
+  .centered {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+  }
+  .centered{
+    width: 510px;
+    height: 100px;
+  }
+
+  .gymcontainer h3{
+    padding-top: 6px;
+    font-size:3vh;         /*increases font when you maximize*/
+    font-weight: bold;
+
+  }
+
+
+
+  .poolcontainer {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    
+  }
+
+  .btm-pool{
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+  }
+
+  .btm-pool{
+    width: 510px;
+    height: 100px;
+   
+  }
+
+  .btm-pool h3{
+    padding-top: 6px;
+    font-size:3vh;
+    font-weight: bold;
+
+  }
+
+  .swimcontainer{
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+  }
+
+  .btm-swim{
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+  }
+
+  .btm-swim{
+    width: 510px;
+    height: 100px;
+   
+  }
+  .btm-swim h3{
+    padding-top: 6px;
+    font-size:3vh;
+    font-weight: bold;
+
+  }
