@@ -1,0 +1,112 @@
+input{
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    
+    
+  }
+  
+  .btn3{
+    width: 150px;
+    height: 30px;
+    margin-left: 75px;
+    margin-top: 4px;
+  }
+
+.reg-container{
+    background-color: rgb(198, 238, 228);
+    padding: 100%;
+}
+  
+  .reg-box{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;  
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(177, 125, 125, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+
+  .reg-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #4710ad;
+    text-align: center;
+  }
+
+  .reg-box .user-box {
+    position: relative;
+  }
+
+  .reg-box .user-box input {
+    width: 100%;
+    height: 50%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  .reg-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .reg-box .user-box input:focus ~ label,
+.reg-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #4710ad;
+  font-size: 12px;
+  height: 5px;
+}
+
+.reg-box form .btn3 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+  
+  }
+
+  .reg-box .btn3:hover {
+    background: #4710ad;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4710ad,
+                0 0 25px #4710ad,
+                0 0 50px #4710ad,
+                0 0 100px #4710ad;
+  }
+
+  .reg-box .btn3 {
+    position: absolute;
+    display: block;
+  }
+  
