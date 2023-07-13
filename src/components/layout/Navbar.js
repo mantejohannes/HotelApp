@@ -10,16 +10,22 @@ const Navbar = ( ) =>{
           
             <ul className="navbar-nav">
 
+
+            <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">Login</Link>
+           </li>
+
             <li className="nav-item">
                 <u>
                 <Link className="nav-link" aria-current="page" to="/home">Facilities</Link> </u>
-     </li>
+           </li>
 
-     <li className="nav-item">
+          <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/room">Rooms</Link>
-     </li>
+          </li>
 
      
+    
      
      {/*
      <li className="nav-item">
