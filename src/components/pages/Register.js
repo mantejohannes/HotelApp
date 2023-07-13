@@ -1,13 +1,30 @@
-import './Styling/Register.css';
+import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 
- 
+import { auth } from "../../config/firebase";
 import { useState } from "react";
 
+import './Styling/Register.css';
+import { useHistory, Link } from "react-router-dom";
+
 function Register () {
-              
+       
+const history = useHistory() ;
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
-              
+
+const registration = (() =>{
+    createUserWithEmailAndPassword(auth, email, password).then(()=>{
+        alert("Registered Successfully");
+        history.push("/");
+
+    }).catch((error)=>{
+
+        console.log(error.message)
+    })
+
+})
+
+
                 
                  
 return(
@@ -33,7 +50,7 @@ return(
             <label>Password</label>
             </div>
                              
-            <button className="btn3">
+            <button className="btn3" onClick={registration}>
             Sign Up
             </button>
             <br></br>

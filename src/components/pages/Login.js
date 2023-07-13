@@ -1,3 +1,6 @@
+import {signInWithEmailAndPassword} from "firebase/auth";
+import { auth } from "../../config/firebase";
+
 import './Styling/Login.css';
 
 import { useState } from "react";
@@ -9,6 +12,17 @@ function Login () {
     const [email, setEmail] =useState('');
     const [password, setPassword] =useState('');
 
+    const goToHomePage = (() =>{
+
+        signInWithEmailAndPassword(auth, email, password).then(()=>{
+            alert("Log in Successfully");
+        history.push("/home");
+
+    }).catch((error)=>{
+
+    })
+
+    })
   
     return(
 
@@ -38,7 +52,7 @@ function Login () {
 
             </div>
 
-            <button className="btn2" >Login</button> <br></br> <br></br>
+            <button className="btn2" onClick={ goToHomePage }>Login</button> <br></br> <br></br>
             
           
             {/*Navigate using LINK function */}

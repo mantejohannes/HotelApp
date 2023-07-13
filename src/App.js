@@ -19,11 +19,12 @@ function App() {
             <Switch>
              
               <Route path="/room"><Room /></Route>
-              <Route path="/login"><Login /></Route>
               <Route path="/register"><Register /></Route>
               <Route path="/forgotpassword"><ForgotPassword /></Route>
 
-              <Route path="/"><Home /></Route>
+              <Route path="/home"><Home /></Route>
+              <Route path="/"><Login /></Route>
+
             </Switch>
 
 
