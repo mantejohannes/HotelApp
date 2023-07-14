@@ -13,7 +13,7 @@ const Card = ({title, imageUrl, details}) => {
   };
   return (
     <div className="container d-flex align-items-center justify-content-center" style={{ width: '1000vh' }} >
-    <div className="card shadow" style={{ maxWidth: '700px' }}>
+    <div className="card shadow" style={{ maxWidth: '800px' }}>
       <div className="row no-gutters">
         <div className="col-md-4">
         <div style={{ height: '100%' }}>
