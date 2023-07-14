@@ -9,7 +9,7 @@ function ForgotPassword() {
     const [email,setPassword] = useState('')
     return(
         <div className='outer-container'>
-        <div className="container">
+        <div className="reset-container">
                 <h4>Reset Password</h4>
             <input type="text" placeholder="Enter your email" 
             onChange={(event) => setPassword(event.target.value)}

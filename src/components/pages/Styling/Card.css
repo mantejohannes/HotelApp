@@ -1,0 +1,16 @@
+
+
+.card-text{
+    margin-bottom: 40px;
+}
+
+.container{
+    padding-bottom: 50px;
+}
+
+.love-but{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+

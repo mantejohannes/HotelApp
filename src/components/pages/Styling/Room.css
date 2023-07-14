@@ -1,0 +1,21 @@
+/* Rooms page styling*/
+.room-class .img1{
+    width: 100%;
+    height:1000px;
+    }
+  
+
+.room-class h2{
+      text-align: center;
+      font-family: Courier, monospace;
+      font-weight: bolder;
+      margin-top: 40px;
+}
+    
+.room-class p{
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 100px;
+     
+    
+ }

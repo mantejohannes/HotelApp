@@ -2,6 +2,7 @@ import React from "react";
 
 
 
+
 const Home = ( ) =>{
     return(
         <>
@@ -28,10 +29,13 @@ const Home = ( ) =>{
             <div className="btm-swim"><h3>SWIMMING POOL</h3></div>
 
             </div>
+       
+</div>
 
 
-
-            </div>
+           
+            
+   
             </>
         );
     }
