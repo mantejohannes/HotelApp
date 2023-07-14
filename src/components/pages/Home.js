@@ -9,8 +9,16 @@ const Home = ( ) =>{
             <div className="home-class">
                 
               <img className="img1" src="https://images.unsplash.com/photo-1582533401888-825fb21aedf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1056&q=80" />
-              <h2>WELCOME</h2>
-              <h2>FACILITIES</h2>
+              <h2 className="header">WELCOME TO</h2>
+              <h2 className="header-1">MANTE'S</h2>
+              <h2 className="header-2">HOTELS</h2>
+              <h2 className="header-3">Book Your stay and enjoy Luxury<br></br>
+              redefined at the most affordable rates </h2>
+
+
+
+
+              <h2 className="header-5">FACILITIES</h2>
               <p>We want your stay at our lush hotel to be truly unforgettable. That is why we give special attention to all of your needs so <br></br>that we can ensure an experience quite unique. Luxury hotels offers the perfect setting with stunning views for leisure <br></br> and our modern luxury resort facilities will help you enjoy the best of all.</p>
             
             <div className="gymcontainer">
