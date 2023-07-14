@@ -19,7 +19,18 @@ const Room = ( ) =>{
             
              
         </div>
-        <Card />
+        <Card 
+        title="Luxury Suite"
+        imageUrl="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+        details="Wifi &#8226; Air conditioning &#8226; Kitchen &#8226; Heating &#8226; Smokers &#8226; Parking &#8226; Balcony &#8226; Animal friendly"
+
+        />
+
+<Card
+        title="Luxury Villa"
+        imageUrl="https://images.unsplash.com/photo-1612143398944-0fc4e9671f96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+        details="Wifi &#8226; Air conditioning &#8226; Pool &#8226; Spa &#8226; Private garden"
+      />
         </>
         );
     }
