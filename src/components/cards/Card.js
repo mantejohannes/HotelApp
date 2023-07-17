@@ -13,7 +13,7 @@ function Card ({title, imageUrl, details, price}) {
 
   const goToReservation = (() =>{
 
-          alert("Log in Successfully");
+          alert("Successfully about to Reserve your Room");
       history.push("/booking");
       })
 
