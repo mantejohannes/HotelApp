@@ -1,16 +1,38 @@
 import React, {useState} from 'react';
 import { FaRegHeart,FaHeart } from 'react-icons/fa';
+import { useHistory, Link } from "react-router-dom";
 
 
 
 
-const Card = ({title, imageUrl, details}) => {
+function Card ({title, imageUrl, details, price}) {
+
+
+  const history = useHistory() ;
+
+
+  const goToReservation = (() =>{
+
+          alert("Log in Successfully");
+      history.push("/booking");
+      })
 
   const [isLiked, setIsLiked] = useState(false);
 
   const toggleLike = () => {
     setIsLiked((prevLiked) => !prevLiked);
   };
+
+  const roundBackgroundStyles = {
+    backgroundColor: '#d5e5f0',
+    borderRadius: '50%',
+    width: '40px',
+    height: '40px',
+    float: 'right'
+    
+
+  };
+
   return (
     <div className="container d-flex align-items-center justify-content-center" style={{ width: '1000vh' }} >
     <div className="card shadow" style={{ maxWidth: '800px' }}>
@@ -25,14 +47,23 @@ const Card = ({title, imageUrl, details}) => {
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             
+
+            
             <div className='love-but'>
+
+
             <button type="button" className="love-button" onClick={toggleLike} style={{  backgroundColor: 'transparent', border: 'none' }}>
                 {isLiked ? (
-                  <FaHeart size={24} color="red" className="heart-icon" />
+                  <FaHeart size={30} color="red" className="heart-icon" />
                 ) : (
-                  <FaRegHeart size={24} color="red" className="heart-icon" />
+                  <FaRegHeart size={30} color="grey" className="heart-icon" />
                 )}
               </button>
+
+              </div>
+              <div className='round' style={roundBackgroundStyles}>
+
+
               </div>
      
 
@@ -40,10 +71,18 @@ const Card = ({title, imageUrl, details}) => {
             <p className="card-text">{details}</p>
            
 
-            <button type="button" class="btn btn-outline-warning btn-lg">Booking</button>
+
+            <br></br>
+            <button type="button" class="btn btn-outline-warning btn-lg" onClick={ goToReservation }>Booking</button>
+            
+            
+            <p className='card-price'>{price}</p>
+            <p className='text-price' style={{ float: 'right' }}>/night</p>
+            
             <p className="card-text">
               <small className="text-muted">Last clicked 3 mins ago</small>
             </p>
+            
           </div>
         </div>
       </div>

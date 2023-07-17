@@ -31,6 +31,16 @@ const Home = ( ) =>{
             <div className="btm-pool"><h3>POOLSIDE BAR</h3></div>
 
             </div>
+            
+
+            <div  className="swimcontainer">
+            <img className="img4" src="https://plus.unsplash.com/premium_photo-1663047149230-bbb5c183e168?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+            <div className="btm-swim"><h3>THE SPA</h3></div>
+
+            </div>
+       
+         
+
 
             <div  className="swimcontainer">
             <img className="img4" src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
@@ -38,7 +48,20 @@ const Home = ( ) =>{
 
             </div>
        
-</div>
+
+            <div  className="swimcontainer">
+            <img className="img4" src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+            <div className="btm-swim"><h3>RESTAURANT</h3></div>
+
+            </div>
+
+            <div  className="swimcontainer">
+            <img className="img4" src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+            <div className="btm-swim"><h3>LAUNDRY</h3></div>
+
+            </div>
+
+          </div>
 
 
            

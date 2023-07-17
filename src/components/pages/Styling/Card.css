@@ -2,6 +2,7 @@
 
 .card-text{
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .container{
@@ -12,5 +13,25 @@
     display: flex;
     justify-content: flex-end;
     padding-bottom: 20px;
+    
 }
 
+.card-price{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    font-weight: bold;
+
+}
+.text-price{
+  margin-top: -37px;
+  margin-right: 38px;
+  font-size: small;
+ 
+}
+
+
+.round{
+    margin-top: -58px;
+    margin-right: 1px;
+}

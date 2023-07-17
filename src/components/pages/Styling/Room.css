@@ -19,3 +19,54 @@
      
     
  }
+
+
+
+ .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      font-family: "Arial"; /* Change the font family here */
+      padding: 150px;
+      color: rgb(0, 0, 0);
+    
+    }
+    .header-1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      font-family: Courier, monospace;  /* Change the font family here */
+      padding-top: 175px;
+      padding-left: 150px;
+      font-weight: bolder;
+      font-size: 6rem;
+      color: rgb(0, 0, 0);
+    }
+    
+    .header-2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      font-family: Courier, monospace;  /* Change the font family here */
+      padding-top: 260px;
+      padding-left: 150px;
+      font-weight: bolder;
+      font-size: 4rem;
+      color: rgb(0, 0, 0);
+    
+    }
+    .header-3{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      font-family: "Arial"; /* Change the font family here */
+      padding-top: 330px;
+      padding-left: 150px;
+      color: rgb(0, 0, 0);
+      font-size:larger;
+    }
+    

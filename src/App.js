@@ -8,6 +8,7 @@ import Navbar from './components/layout/Navbar';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import ForgotPassword from './components/pages/ForgotPassword';
+import Booking from './components/pages/Booking';
 function App() {
   return (
     <>
@@ -23,6 +24,8 @@ function App() {
               <Route path="/forgotpassword"><ForgotPassword /></Route>
 
               <Route path="/home"><Home /></Route>
+              <Route path="/booking"><Booking /></Route>
+
               <Route path="/"><Login /></Route>
 
             </Switch>
