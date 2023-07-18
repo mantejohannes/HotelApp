@@ -1,17 +1,43 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Styling/Booking.css';
+import { collection, addDoc } from 'firebase/firestore'; // Import the required Firestore functions
+import { db } from '../../config/firebase'; // Import the initialized Firestore instance
+import { useHistory } from 'react-router-dom';
+
 
 
 
 
 const Booking = () => {
+  
+  const history = useHistory();
   const location = useLocation();
   const { roomDetails } = location.state;
 
-  const handleReservation = () => {
-    // Implement your reservation logic here
+  /*const handleReservation = () => {
     alert(`You have reserved ${roomDetails.title}.`);
+  };*/
+
+  const handleReservation = async () => {
+    try {
+      // Add the reservation information to Firestore
+      const docRef = await addDoc(collection(db, 'reservations'), {
+        title: roomDetails.title,
+        imageUrl: roomDetails.imageUrl,
+        details: roomDetails.details,
+        price: roomDetails.price,
+        timestamp: new Date(),
+      });
+
+      console.log('Document written with ID: ', docRef.id);
+      alert(`You have reserved ${roomDetails.title}.`);  // Show success message
+      history.push("/reserved");
+
+    } catch (error) {
+      console.error('Error adding document: ', error);
+      alert('Reservation failed! Please try again later.'); // Show error message
+    }
   };
 
   return (

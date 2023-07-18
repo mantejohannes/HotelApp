@@ -9,6 +9,7 @@ import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import ForgotPassword from './components/pages/ForgotPassword';
 import Booking from './components/pages/Booking';
+import Reserved from './components/pages/Reserved';
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
 
               <Route path="/home"><Home /></Route>
               <Route exact path="/room" component={Room} />
-          <Route path="/booking" component={Booking} />
-
-
+              <Route path="/booking" component={Booking} />
+=             <Route path="/reserved"><Reserved /></Route>
+              
               <Route path="/"><Login /></Route>
 
             </Switch>

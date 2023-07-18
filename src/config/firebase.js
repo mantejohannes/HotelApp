@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -8,6 +9,8 @@ import { getAnalytics } from "firebase/analytics";
 
 
 import {getAuth} from "firebase/auth";
+import { getFirestore } from 'firebase/firestore';
+
 const firebaseConfig = {
   apiKey: "AIzaSyBGDV5yE579hsyBz5WJeBVk6EZeJam2J5s",
   authDomain: "hotel-app-3453e.firebaseapp.com",
@@ -23,5 +26,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const auth = getAuth(app);
+const db = getFirestore(app);
 
-export {auth}
+
+export {auth, db}
