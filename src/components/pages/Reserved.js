@@ -23,7 +23,7 @@ function Reserved() {
         <h4>Reservation Successful</h4>
         <p>Your room has been reserved</p>
 
-        <button type="button" className="btn btn-dark btn-lg btn-block" style={{ backgroundColor: '#a68d26', color: '#fff' }} onClick={ goToHome }>BACK HOME</button>
+        <button type="button" className="" style={{ backgroundColor: '#a68d26', color: '#fff' }} onClick={ goToHome }>BACK HOME</button>
         </div>
 
         

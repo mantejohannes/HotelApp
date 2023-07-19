@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState}  from "react";
 import './Styling/Room.css';
 import Card from "../cards/Card";
 import './Styling/Card.css';
@@ -8,9 +8,7 @@ import './Styling/Card.css';
 
 
 function Room ( ){
-
-
-
+  
 
     return(
         <>

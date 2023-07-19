@@ -6,15 +6,14 @@ import { db } from '../../config/firebase'; // Import the initialized Firestore 
 import { useHistory } from 'react-router-dom';
 
 
-
-
-
 const Booking = () => {
   
   const history = useHistory();
   const location = useLocation();
   const { roomDetails } = location.state;
 
+
+ 
   /*const handleReservation = () => {
     alert(`You have reserved ${roomDetails.title}.`);
   };*/
@@ -31,7 +30,7 @@ const Booking = () => {
       });
 
       console.log('Document written with ID: ', docRef.id);
-      alert(`You have reserved ${roomDetails.title}.`);  // Show success message
+      alert(`You have reserved ${roomDetails.title}.`); // Show success message
       history.push("/reserved");
 
     } catch (error) {

@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 import { useHistory } from 'react-router-dom';
+import StarRating from '../pages/Rating';
 
 function Card({ title, imageUrl, details, price }) {
   const history = useHistory();
   const [isLiked, setIsLiked] = useState(false);
+
+  const [userRating, setUserRating] = useState(0);
+  const handleRatingChange = (newRating) => {
+    setUserRating(newRating);
+  };
+
+  
+
+
 
   const toggleLike = () => {
     setIsLiked((prevLiked) => !prevLiked);
@@ -30,6 +40,8 @@ function Card({ title, imageUrl, details, price }) {
     height: '40px',
     float: 'right',
   };
+
+ 
 
   return (
     <div className="container d-flex align-items-center justify-content-center" style={{ width: '1000vh' }}>
@@ -58,9 +70,9 @@ function Card({ title, imageUrl, details, price }) {
               <p className="text-price" style={{ float: 'right' }}>
                 /night
               </p>
-              <p className="card-text">
-                <small className="text-muted">Last clicked 3 mins ago</small>
-              </p>
+              <StarRating maxStars={5} initialRating={userRating} onRatingChange={handleRatingChange} />
+              {userRating > 0 && <p> {userRating.toFixed(1)}</p>}
+
             </div>
           </div>
         </div>

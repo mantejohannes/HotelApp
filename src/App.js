@@ -28,7 +28,7 @@ function App() {
               <Route path="/home"><Home /></Route>
               <Route exact path="/room" component={Room} />
               <Route path="/booking" component={Booking} />
-=             <Route path="/reserved"><Reserved /></Route>
+             <Route path="/reserved"><Reserved /></Route>
               
               <Route path="/"><Login /></Route>
 
