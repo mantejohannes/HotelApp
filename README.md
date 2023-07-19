@@ -5,6 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ![image](https://github.com/mantejohannes/HotelApp/assets/125446000/d82bde75-166c-48f0-b8e3-a349176559a6)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/938be2e8-3ea3-4041-b8c0-4466a96b177f)
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
