@@ -10,11 +10,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![image](https://github.com/mantejohannes/HotelApp/assets/125446000/938be2e8-3ea3-4041-b8c0-4466a96b177f)
 
 
-![image](https://github.com/mantejohannes/HotelApp/assets/125446000/0d4dcf81-9ef3-43da-9ca0-12dbfbb6c4f5)
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/de864a73-1933-43fc-bb65-7d6dc0472acd)
 
 
-![image](https://github.com/mantejohannes/HotelApp/assets/125446000/d4b81038-cd13-4ec9-a189-6e0ec26099fa)
-
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/1b03e2bc-9c6e-46e9-af58-20688f965cf6)
 
 ![image](https://github.com/mantejohannes/HotelApp/assets/125446000/e67c0f6c-b84f-4dd9-9b75-face2ef0803c)
 
