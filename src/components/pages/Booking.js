@@ -96,6 +96,9 @@ const Booking = () => {
                 /night
               </p>
 
+
+              {/*increment counter*/}
+              
               <div className='children-counter'>
               <div className="children-label">
                     <p>Children:</p>
