@@ -1,6 +1,27 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/891be969-2e73-45f6-a675-e2e4a14d780b)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/d82bde75-166c-48f0-b8e3-a349176559a6)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/938be2e8-3ea3-4041-b8c0-4466a96b177f)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/0d4dcf81-9ef3-43da-9ca0-12dbfbb6c4f5)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/d4b81038-cd13-4ec9-a189-6e0ec26099fa)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/e67c0f6c-b84f-4dd9-9b75-face2ef0803c)
+
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/4b4285ad-3467-4dc3-b3d6-3855b15c5b87)
+
+![image](https://github.com/mantejohannes/HotelApp/assets/125446000/9f53eb7a-16d0-4a92-a692-cf2c2b76c5e9)
 
 ## Available Scripts
 
