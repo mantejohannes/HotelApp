@@ -11,3 +11,41 @@
 margin-right: 100px;
 margin-bottom: 50px;
 }
+
+
+/* Booking.css */
+.children-counter {
+    display: flex;
+    margin-top: 2px;
+  }
+  .children-label{
+    margin-right: 5px;
+
+  }
+  .adult-label{
+    margin-right: 19px;
+
+  }
+  .night-label{
+    margin-right: 18px;
+
+  }
+  
+  .counter-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .counter-value {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './Styling/Booking.css';
 import { collection, addDoc } from 'firebase/firestore'; // Import the required Firestore functions
@@ -11,6 +11,11 @@ const Booking = () => {
   const history = useHistory();
   const location = useLocation();
   const { roomDetails } = location.state;
+  const [childrenCount, setChildrenCount] = useState(0);
+  const [adultCount, setAdultCount] = useState(0);
+  const [nightCount, setNightCount] = useState(0);
+
+
 
 
  
@@ -39,6 +44,33 @@ const Booking = () => {
     }
   };
 
+  const handleIncrement = () => {
+    setChildrenCount((prevCount) => prevCount + 1);
+  };
+
+  const handleDecrement = () => {
+    setChildrenCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
+  };
+
+  
+  const handleIncAdult = () => {
+    setAdultCount((prevCount) => prevCount + 1);
+  };
+
+  const handleDecAdult = () => {
+    setAdultCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
+  };
+
+  
+  const handleIncNight = () => {
+    setNightCount((prevCount) => prevCount + 1);
+  };
+
+  const handleDecNight = () => {
+    setNightCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
+  };
+
+
   return (
    
 
@@ -63,6 +95,48 @@ const Booking = () => {
               <p className="text-price" style={{ float: 'right' }}>
                 /night
               </p>
+
+              <div className='children-counter'>
+              <div className="children-label">
+                    <p>Children:</p>
+                  </div>
+                  
+                  <button className='counter-button' onClick={handleDecrement}>
+                    -
+                  </button>
+                  <span className='counter-value'>{childrenCount}</span>
+                  <button className='counter-button' onClick={handleIncrement}>
+                    +
+                  </button>
+                </div>
+
+                <div className='children-counter'>
+              <div className="adult-label">
+                    <p>Adults:</p>
+                  </div>
+                  
+                  <button className='counter-button' onClick={handleDecAdult}>
+                    -
+                  </button>
+                  <span className='counter-value'>{adultCount}</span>
+                  <button className='counter-button' onClick={handleIncAdult}>
+                    +
+                  </button>
+                </div>
+
+                <div className='children-counter'>
+              <div className="night-label">
+                    <p>Nights:</p>
+                  </div>
+                  
+                  <button className='counter-button' onClick={handleDecNight}>
+                    -
+                  </button>
+                  <span className='counter-value'>{nightCount}</span>
+                  <button className='counter-button' onClick={handleIncNight}>
+                    +
+                  </button>
+                </div>
               <button type="button" className="btn btn-outline-warning btn-lg" onClick={handleReservation} style={{ float: 'right' }}>
               Reserve
               </button>
